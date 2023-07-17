@@ -3,3 +3,7 @@
 *.iws
 *.ipr
 .idea/
+
+# Rust
+/target
+Cargo.lock
