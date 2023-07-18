@@ -7,3 +7,4 @@
 - [Calculate the median](./src/calculate_the_median.rs)
 - [Find unique items](./src/find_unique_items.rs)
 - [Print any text type](./src/print_any_text_type.rs)
+- [Case in-sensitive sort](./src/case_insensitive_sort.rs)
