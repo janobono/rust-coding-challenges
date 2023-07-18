@@ -5,4 +5,5 @@
 ## challenges
 
 - [Calculate the median](./src/calculate_the_median.rs)
+- [Find unique items](./src/find_unique_items.rs)
 
