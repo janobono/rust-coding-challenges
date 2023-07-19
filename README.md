@@ -10,3 +10,4 @@
 - [Case in-sensitive sort](./src/case_insensitive_sort.rs)
 - [Convert text to morse code](./src/convert_text_to_morse_code.rs)
 - [Value of a hand of cards](./src/value_of_a_hand_of_cards.rs)
+- [Has a deadline been reached](./src/has_a_deadline_been_reached.rs)

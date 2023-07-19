@@ -1,4 +1,10 @@
-use rust_coding_challenges::*;
+use {
+    chrono::Local,
+    crate::has_a_deadline_been_reached::{Deadline, ImportantEvent},
+    rust_coding_challenges::*,
+};
+
+mod has_a_deadline_been_reached;
 
 fn main() {
     let data = [1.0, 1.4, 1.5];
@@ -15,4 +21,10 @@ fn main() {
     println!("Sorted data {:?}", data);
 
     print_morse_code("Hello world!");
+
+    let event = ImportantEvent {
+        what: String::from("Hello event"),
+        when: Local::now().naive_local().date(),
+    };
+    println!("This event {} is today {} is passed {}", &event.what, event.is_today(), event.is_passed());
 }
