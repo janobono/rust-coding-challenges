@@ -13,4 +13,6 @@ fn main() {
     let mut data = vec!["Todd", "amy"];
     case_insensitive_sort(&mut data);
     println!("Sorted data {:?}", data);
+
+    print_morse_code("Hello world!");
 }
