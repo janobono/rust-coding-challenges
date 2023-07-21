@@ -52,4 +52,9 @@ fn main() {
 
     let path = Path::new("./test.txt");
     println!("File {:?} exists = {}, is readable = {}, is writeable = {}", path, path.exists(), path.is_readable(), path.is_writeable());
+
+    let text = "text";
+    let encoded = encode(text);
+    let decoded = decode(&encoded);
+    println!("Data = {} Encoded = {} Decoded = {}", text, &encoded, &decoded);
 }

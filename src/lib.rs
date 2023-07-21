@@ -10,6 +10,7 @@ mod sum_a_list_of_numbers_with_missing_values;
 mod calculate_the_number_of_weeks_between_two_dates;
 mod validate_an_isbn_number;
 mod check_if_a_file_exists;
+mod run_length_encoding;
 
 pub fn calculate_the_median(data: &[f32]) -> Option<f32> {
     calculate_the_median::calculate_the_median(data)
@@ -48,4 +49,12 @@ pub fn weeks_between(start: &str, end: &str) -> i32 {
 
 pub fn validate_isbn(data: &str) -> bool {
     validate_an_isbn_number::validate_isbn(data)
+}
+
+pub fn encode(text: &str) -> String {
+    run_length_encoding::encode(text)
+}
+
+pub fn decode(text: &str) -> String {
+    run_length_encoding::decode(text)
 }

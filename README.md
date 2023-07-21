@@ -17,3 +17,4 @@
 - [Validate an ISBN number](./src/validate_an_isbn_number.rs)
 - [Check if a file exists](./src/check_if_a_file_exists.rs)
 - [Interpret an RGB hex color](./src/interpret_an_rgb_hex_color.rs)
+- [Run-length encoding](./src/run_length_encoding.rs)
