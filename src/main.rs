@@ -10,6 +10,7 @@ use {
 mod has_a_deadline_been_reached;
 mod convert_between_celsius_and_fahrenheit;
 mod check_if_a_file_exists;
+mod interpret_an_rgb_hex_color;
 
 fn main() {
     let data = [1.0, 1.4, 1.5];

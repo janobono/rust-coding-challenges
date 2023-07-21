@@ -16,3 +16,4 @@
 - [Calculate the number of weeks between two dates](./src/calculate_the_number_of_weeks_between_two_dates.rs)
 - [Validate an ISBN number](./src/validate_an_isbn_number.rs)
 - [Check if a file exists](./src/check_if_a_file_exists.rs)
+- [Interpret an RGB hex color](./src/interpret_an_rgb_hex_color.rs)
