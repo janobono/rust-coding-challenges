@@ -12,3 +12,4 @@
 - [Value of a hand of cards](./src/value_of_a_hand_of_cards.rs)
 - [Has a deadline been reached](./src/has_a_deadline_been_reached.rs)
 - [Convert between Celsius and Fahrenheit](./src/convert_between_celsius_and_fahrenheit.rs)
+- [Sum a list of numbers with missing values](./src/sum_a_list_of_numbers_with_missing_values.rs)

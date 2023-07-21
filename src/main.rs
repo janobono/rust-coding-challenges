@@ -34,4 +34,7 @@ fn main() {
     println!("Temperature {} Celsius = {} Fahrenheit", temperature.to_celsius(), temperature.to_fahrenheit());
     let temperature = Temperature::new(86.0, Scale::Fahrenheit);
     println!("Temperature {} Celsius = {} Fahrenheit", temperature.to_celsius(), temperature.to_fahrenheit());
+
+    let data = vec![Some(4), None, Some(1)];
+    println!("Sum of {:?} = {}", &data, sum_with_missing(&data));
 }
