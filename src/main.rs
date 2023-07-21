@@ -1,12 +1,15 @@
 use {
     chrono::Local,
+    crate::check_if_a_file_exists::FileMetaData,
     crate::convert_between_celsius_and_fahrenheit::{Scale, Temperature},
     crate::has_a_deadline_been_reached::{Deadline, ImportantEvent},
     rust_coding_challenges::*,
+    std::path::Path,
 };
 
 mod has_a_deadline_been_reached;
 mod convert_between_celsius_and_fahrenheit;
+mod check_if_a_file_exists;
 
 fn main() {
     let data = [1.0, 1.4, 1.5];
@@ -45,4 +48,7 @@ fn main() {
 
     let data = "978-3-16-148410-0";
     println!("Isbn number {} is valid {}", data, validate_isbn(data));
+
+    let path = Path::new("./test.txt");
+    println!("File {:?} exists = {}, is readable = {}, is writeable = {}", path, path.exists(), path.is_readable(), path.is_writeable());
 }

@@ -15,3 +15,4 @@
 - [Sum a list of numbers with missing values](./src/sum_a_list_of_numbers_with_missing_values.rs)
 - [Calculate the number of weeks between two dates](./src/calculate_the_number_of_weeks_between_two_dates.rs)
 - [Validate an ISBN number](./src/validate_an_isbn_number.rs)
+- [Check if a file exists](./src/check_if_a_file_exists.rs)
