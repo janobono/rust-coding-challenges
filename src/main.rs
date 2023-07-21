@@ -1,10 +1,12 @@
 use {
     chrono::Local,
+    crate::convert_between_celsius_and_fahrenheit::{Scale, Temperature},
     crate::has_a_deadline_been_reached::{Deadline, ImportantEvent},
     rust_coding_challenges::*,
 };
 
 mod has_a_deadline_been_reached;
+mod convert_between_celsius_and_fahrenheit;
 
 fn main() {
     let data = [1.0, 1.4, 1.5];
@@ -27,4 +29,9 @@ fn main() {
         when: Local::now().naive_local().date(),
     };
     println!("This event {} is today {} is passed {}", &event.what, event.is_today(), event.is_passed());
+
+    let temperature = Temperature::new(30.0, Scale::Celsius);
+    println!("Temperature {} Celsius = {} Fahrenheit", temperature.to_celsius(), temperature.to_fahrenheit());
+    let temperature = Temperature::new(86.0, Scale::Fahrenheit);
+    println!("Temperature {} Celsius = {} Fahrenheit", temperature.to_celsius(), temperature.to_fahrenheit());
 }
