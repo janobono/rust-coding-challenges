@@ -42,4 +42,7 @@ fn main() {
     let end = "2023-07-30";
     println!("Weeks between {} - {} = {}", start, end, weeks_between(start, end));
     println!("Weeks between {} - {} = {}", end, start, weeks_between(end, start));
+
+    let data = "978-3-16-148410-0";
+    println!("Isbn number {} is valid {}", data, validate_isbn(data));
 }
