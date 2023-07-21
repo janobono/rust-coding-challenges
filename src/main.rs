@@ -37,4 +37,9 @@ fn main() {
 
     let data = vec![Some(4), None, Some(1)];
     println!("Sum of {:?} = {}", &data, sum_with_missing(&data));
+
+    let start = "2023-07-10";
+    let end = "2023-07-30";
+    println!("Weeks between {} - {} = {}", start, end, weeks_between(start, end));
+    println!("Weeks between {} - {} = {}", end, start, weeks_between(end, start));
 }

@@ -7,6 +7,7 @@ mod case_insensitive_sort;
 mod convert_text_to_morse_code;
 mod value_of_a_hand_of_cards;
 mod sum_a_list_of_numbers_with_missing_values;
+mod calculate_the_number_of_weeks_between_two_dates;
 
 pub fn calculate_the_median(data: &[f32]) -> Option<f32> {
     calculate_the_median::calculate_the_median(data)
@@ -37,4 +38,8 @@ pub fn count_value(data: &Hand) -> u8 {
 
 pub fn sum_with_missing(data: &Vec<Option<i32>>) -> i32 {
     sum_a_list_of_numbers_with_missing_values::sum_with_missing(data)
+}
+
+pub fn weeks_between(start: &str, end: &str) -> i32 {
+    calculate_the_number_of_weeks_between_two_dates::weeks_between(start, end)
 }

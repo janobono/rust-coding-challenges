@@ -13,3 +13,4 @@
 - [Has a deadline been reached](./src/has_a_deadline_been_reached.rs)
 - [Convert between Celsius and Fahrenheit](./src/convert_between_celsius_and_fahrenheit.rs)
 - [Sum a list of numbers with missing values](./src/sum_a_list_of_numbers_with_missing_values.rs)
+- [Calculate the number of weeks between two dates](./src/calculate_the_number_of_weeks_between_two_dates.rs)
