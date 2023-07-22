@@ -57,4 +57,17 @@ fn main() {
     let encoded = encode(text);
     let decoded = decode(&encoded);
     println!("Data = {} Encoded = {} Decoded = {}", text, &encoded, &decoded);
+
+    let dates = [
+        "2002 Feb 02",
+        "2010-12-11",
+        "1999/March/02",
+        "01.Mar.2021",
+        "Mar.05.2021",
+        "not a date",
+    ];
+
+    for d in dates.iter() {
+        println!("{} -> {:?}", d, flexible_date_parse(d));
+    }
 }

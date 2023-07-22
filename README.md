@@ -18,3 +18,4 @@
 - [Check if a file exists](./src/check_if_a_file_exists.rs)
 - [Interpret an RGB hex color](./src/interpret_an_rgb_hex_color.rs)
 - [Run-length encoding](./src/run_length_encoding.rs)
+- [Handle inconsistent dates](./src/handle_inconsistent_dates.rs)

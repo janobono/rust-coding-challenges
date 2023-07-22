@@ -1,3 +1,5 @@
+use chrono::NaiveDate;
+
 use crate::value_of_a_hand_of_cards::Hand;
 
 mod calculate_the_median;
@@ -11,6 +13,7 @@ mod calculate_the_number_of_weeks_between_two_dates;
 mod validate_an_isbn_number;
 mod check_if_a_file_exists;
 mod run_length_encoding;
+mod handle_inconsistent_dates;
 
 pub fn calculate_the_median(data: &[f32]) -> Option<f32> {
     calculate_the_median::calculate_the_median(data)
@@ -57,4 +60,8 @@ pub fn encode(text: &str) -> String {
 
 pub fn decode(text: &str) -> String {
     run_length_encoding::decode(text)
+}
+
+pub fn flexible_date_parse(text: &str) -> Option<NaiveDate> {
+    handle_inconsistent_dates::flexible_date_parse(text)
 }
