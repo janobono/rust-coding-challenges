@@ -1,6 +1,7 @@
-use chrono::NaiveDate;
-
-use crate::value_of_a_hand_of_cards::Hand;
+use {
+    chrono::NaiveDate,
+    crate::value_of_a_hand_of_cards::Hand,
+};
 
 mod calculate_the_median;
 mod find_unique_items;

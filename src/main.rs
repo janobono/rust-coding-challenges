@@ -3,6 +3,7 @@ use {
     crate::check_if_a_file_exists::FileMetaData,
     crate::convert_between_celsius_and_fahrenheit::{Scale, Temperature},
     crate::has_a_deadline_been_reached::{Deadline, ImportantEvent},
+    crate::travel_planner::{Graph, shortest_path},
     rust_coding_challenges::*,
     std::path::Path,
 };
@@ -11,6 +12,7 @@ mod has_a_deadline_been_reached;
 mod convert_between_celsius_and_fahrenheit;
 mod check_if_a_file_exists;
 mod interpret_an_rgb_hex_color;
+mod travel_planner;
 
 fn main() {
     let data = [1.0, 1.4, 1.5];
@@ -70,4 +72,12 @@ fn main() {
     for d in dates.iter() {
         println!("{} -> {:?}", d, flexible_date_parse(d));
     }
+
+    let edge_list = include!("large_graph.in");
+    let g = Graph::from_edge_list(&edge_list);
+
+    if let Some((path, cost)) = shortest_path(
+        &g, 1000, 9000) {
+        println!("1000->9000, {:?} {}", path, cost);
+    };
 }
