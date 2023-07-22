@@ -20,3 +20,4 @@
 - [Run-length encoding](./src/run_length_encoding.rs)
 - [Handle inconsistent dates](./src/handle_inconsistent_dates.rs)
 - [Travel planner](./src/travel_planner.rs)
+- [Vigenere cipher](./src/vigenere_cipher.rs)

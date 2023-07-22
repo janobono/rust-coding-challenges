@@ -15,6 +15,7 @@ mod validate_an_isbn_number;
 mod check_if_a_file_exists;
 mod run_length_encoding;
 mod handle_inconsistent_dates;
+mod vigenere_cipher;
 
 pub fn calculate_the_median(data: &[f32]) -> Option<f32> {
     calculate_the_median::calculate_the_median(data)
@@ -65,4 +66,12 @@ pub fn decode(text: &str) -> String {
 
 pub fn flexible_date_parse(text: &str) -> Option<NaiveDate> {
     handle_inconsistent_dates::flexible_date_parse(text)
+}
+
+pub fn encrypt(plaintext: &str, key: &str) -> String {
+    vigenere_cipher::encrypt(plaintext, key)
+}
+
+pub fn decrypt(ciphertext: &str, key: &str) -> String {
+    vigenere_cipher::decrypt(ciphertext, key)
 }

@@ -80,4 +80,13 @@ fn main() {
         &g, 1000, 9000) {
         println!("1000->9000, {:?} {}", path, cost);
     };
+
+    let key = "WHYRUST";
+    let ciphertext = "
+    PVCDJG
+    PAYCMY
+    JRKUC
+    ";
+    let plaintext = decrypt(&ciphertext, key);
+    println!("{}", plaintext);
 }
